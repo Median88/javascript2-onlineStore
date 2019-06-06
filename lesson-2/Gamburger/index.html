@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style>#calculator {
+        text-align: center; }</style>
+</head>
+<body>
+<!--
+Некая сеть фастфуда предлагает несколько видов гамбургеров:
+
+a. Маленький (50 рублей, 20 калорий).
+b. Большой (100 рублей, 40 калорий).
+
+
+Гамбургер может быть с одним из нескольких видов начинок (обязательно):
+
+a. С сыром (+10 рублей, +20 калорий).
+b. С салатом (+20 рублей, +5 калорий).
+c. С картофелем (+15 рублей, +10 калорий).
+
+Дополнительно гамбургер можно посыпать
+
+d. приправой (+15 рублей, +0 калорий) и полить
+e. майонезом (+20 рублей, +5 калорий).
+
+
+Напишите программу, рассчитывающую стоимость и калорийность гамбургера.
+-->
+
+<div id="calculator">
+    <label> Размер:
+        <select id="size">
+            <option value="small">Маленький</option>
+            <option value="big">Большой</option>
+        </select>
+    </label>
+    <label> Соус:
+        <select id="sauce">
+            <option value="cheese">Сыр</option>
+            <option value="salad">Салат</option>
+            <option value="potato">Картофель</option>
+        </select>
+    </label>
+    <label> Приправа:
+        <input type="checkbox" name="Приправа" id="flavoring"> </label>
+    <label> Майонез:
+        <input type="checkbox" name="Майонез" id="mayo"> </label>
+    <button id="submit">Рассчитать</button>
+    <p id="price"></p>
+    <p id="calories"></p>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
