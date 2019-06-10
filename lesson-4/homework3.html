@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HOMEWORK 3</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<form class="form">
+    <div class="form_input">
+        <input name="username" type="text" id="applicationName" pattern="[а-яa-z]{1,10}" placeholder="Введите своё имя"
+               required/>
+        <span class="error">Имя пользователя должно содержать только строчные буквы. например андрей, длина имени не должна превышать 10 букв</span>
+    </div>
+    <div class="form_input">
+        <input type="tel" name="phone" placeholder="Введите телефон"
+               pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"/>
+        <span class="error">Пример правильного ввода: +79993332211</span>
+    </div>
+    <div class="form_input">
+        <input name="email" type="email" id="applicationEmail" placeholder="Введите свой email"/>
+        <span class="error">Example: mymail@gmail.com</span>
+    </div>
+    <div class="form_input">
+        <input name="text" type="text" id="applicationText" maxlength="30" placeholder="Введите сообщение" required/>
+    </div>
+    <button class="applicationButton" type="submit" form="application">Send</button>
+</form>
+</body>
+</html>

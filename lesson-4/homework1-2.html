@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let text = 'Oliver: \'Hi Mary.\' Mary: \'Oh, hi.\'\n' +
+        'Oliver: \'How are you doing?\'\n' +
+        'Mary: \'I\'m doing alright. How about you?\'\n' +
+        '    Oliver: \'Not too bad. The weather is great isn\'t it?\'\n' +
+        '    Mary: \'Yes. It\'s absolutely beautiful today.\'\n' +
+        'Oliver: \'I wish it was like this more frequently.\'\n' +
+        'Mary: \'Me too.\'\n' +
+        'Oliver: \'So where are you going now?\'\n' +
+        'Mary: \'I\'m going to meet a friend of mine at the department store.\'\n' +
+        'Oliver: \'Going to do a little shopping?\'\n' +
+        'Mary: \'Yeah, I have to buy some presents for my parents.\'\n' +
+        'Oliver: \'What\'s the occasion?\'\n' +
+        '    Mary: \'It\'s their anniversary.\'\n' +
+        'Oliver: \'That\'s great. Well, you better get going. You don\'t want to be late.\'\n' +
+        'Mary: \'I\'ll see you next time.\'\n' +
+        'Oliver: \'Sure. Bye.\'';
+    document.write(text.replace(/^'|(\s)'|'(\s)|'$/g, '"'));
+
+</script>
+</body>
+</html>
